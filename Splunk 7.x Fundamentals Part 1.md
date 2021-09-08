@@ -12,5 +12,27 @@ Index any data from any source. And aggregate, analyze, and get answers form the
 - Index Data: collect data from virtually any source, inspect and label the data with a sourcetype; Break the data into single events. Add the time stamps and normalized to a consistent format. Therefore they could be searched.
 - Search & Investgate: find events across multiple data sources, analyze and run statistics.
 - Add Knowledge: affect how data is interpreted, give classification, add enrichment, normalize it, and save reports for future use.
-- Monitor & Alert: proactively monitor all infrastructure in real-time.
-- Report & Analyze
+- Monitor & Alert: proactively monitor all infrastructure in real-time, to identify issues, problems, and attacks. Create alters to monitor for specific conditions and automatically respond with a variety of actions.
+- Report & Analyze: collect reports and visualizations into dashborads.
+### 3 Processing Components
+- Indexers: process incoming machine data, storing the results in indexes as events, and create a number of files organized in sets of directories by age.
+- Search Heads: allow to use the Splunk Search Language, handle search requests and distribute the requests to the indexers, consolidate and enrich the results from indexers. Various tools: dashboards, reports, visualizations.
+- Forwarders: Splunk Enterprise instances that consume data and forward it to the indexers for processing.
+### Deploying and Scaling Splunk
+Splunk can be deployed in a variety of configurations.
+### Single-Instance Deployment
+One instance of Splunk Enterprise handles all the functions of Splunk, including input, parsing, indexing and searching. Suitable for proof of concept, personal use, learning and serve the needs of small department-sized environments.
+In a production environment as our usage scales, we would need to start splitting some of this functionlity across multiple specialized instances. Search heads and indexers can also be clustered.
+### Quiz
+- Search requests are processed by the 'Indexers'.
+- Which function is not a part of a single instance deployment? 'Clustering'
+- A single-instance deployment of Splunk Enterprise handles: 'Indexing / Searching / Parsing / input'
+- Which of these is not a main component of Splunk? 'Compress and archive'
+- In most Splunk deployments, 'Forwarders' serve as the primary way data is supplied for indexing.
+
+## MODULE 3 - Installing Splunk
+### plantform
+Linux / Windows / OSX / Splunk Cloud / Apps and Roles.
+### Lab - Splunk Fundamentals 1 Lab Exercisesy
+[SplunkFundamentals1_module3.pdf](https://github.com/Steve1516/Splunk/files/7127327/SplunkFundamentals1_module3.pdf)
+
