@@ -54,4 +54,5 @@ Linux / Windows / OSX / Splunk Cloud / Apps and Roles.
 - If Splunk recognizes the data, it'll assign it a pre-trained source type.
 - The `APP` context setting is something to be aware of in Splunk, the section you made will tell Splunk which app to apply this sourcetype to(Instrumentation / Monitoring Console / Search&Reporting / System).
 - The `Host` should be the name of the machine from which these events originate.
+
 **Indexes**: are directories where the data will be stored.
