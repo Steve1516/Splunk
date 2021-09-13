@@ -52,7 +52,17 @@ Linux / Windows / OSX / Splunk Cloud / Apps and Roles.
 ### 4.2 Using the Data Upload Input Option
 **Upload**: suitable for files which will never update.
 - If Splunk recognizes the data, it'll assign it a pre-trained source type.
-- The `APP` context setting is something to be aware of in Splunk, the section you made will tell Splunk which app to apply this sourcetype to(Instrumentation / Monitoring Console / Search&Reporting / System).
+- The `Category`: select what category to store it in the predefined menu.
+- The `APP`: select which app context to save it to. Context setting is something to be aware of in Splunk, the section you made will tell Splunk which app to apply this sourcetype to(Instrumentation / Monitoring Console / Search&Reporting / System).
 - The `Host` should be the name of the machine from which these events originate.
-
 **Indexes**: are directories where the data will be stored.
+- `Main Index`: could store all evnets in the main index, allowing to use one index to search all data. But you also could have separate indexes,
+  - separate indexes could make searches more efficient, being able to use an index as part of a search string limits the amount of data Splunk needs to search and returns only the events from that index. e.g. `search: index=security_index fail*`
+  - multiple indexes allow to limit access by user role, letting an admin user control who can see what data.
+  - in most deployments, there're times when you will want or need to retain data for different time intervals. allow set retention policies by index.
+### 4.3 Using the Monitor Input Option
+- Similar to the upload option with a few differences.support `Continuously Monitor` or `Index Once`.
+- `Whitelist` & `Blacklist`: use when set a directory
+### 4.4 Useing the Universal Forwarders Option
+- Use forwarders to get data into Splunk Enterprise: https://docs.splunk.com/Documentation/Splunk/latest/Data/Usingforwardingagents
+- Custom alert actions overview: https://docs.splunk.com/Documentation/Splunk/latest/AdvancedDev/ModAlertsIntro
