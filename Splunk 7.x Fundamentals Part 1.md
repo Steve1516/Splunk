@@ -1,6 +1,6 @@
 # Splunk 7.x Fundamentals Part 1 eLearning 
-> https://education.splunk.com/user/consume/course_pathway/b217c85e-72b4-3f06-96fa-7fc216a78823/90/82b105dc-e221-3ffe-bb66-f3e45f07d721?complete=0&amp;tab=overview
-> [Splunk 7.x Fundamentals Part 1 (eLearning).pdf](https://github.com/Steve1516/Splunk/files/7159685/Splunk.7.x.Fundamentals.Part.1.eLearning.pdf)
+> - https://education.splunk.com/user/consume/course_pathway/b217c85e-72b4-3f06-96fa-7fc216a78823/90/82b105dc-e221-3ffe-bb66-f3e45f07d721?complete=0&amp;tab=overview
+> - [Splunk 7.x Fundamentals Part 1 (eLearning).pdf](https://github.com/Steve1516/Splunk/files/7159685/Splunk.7.x.Fundamentals.Part.1.eLearning.pdf)
 
 ***
 ## MODULE 1
