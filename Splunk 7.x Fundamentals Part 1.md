@@ -87,7 +87,16 @@ Plantform : Linux / Windows / OSX / Splunk Cloud / Apps and Roles.
 ## MODULE 5
 ### 5.1 Basic Searching
 #### 5.1.1 Search App
-
+The Search and Reporting App provides a default interface for searching and analyzing data. It enables you to create knowledge objects, reports, dashboards and more. 7 main compents:
+1. `Splunk bar`: appears on every page in splunk enterprise. `switch between apps` / `edit account` / `view system-level messages` / `manage and edit splunk configuration` / `monitor the progress of search jpbs` / `find help`.
+2. `App bar`: allows to navigate the application.
+3. `Search bar`: used to run searches. `Time range picker` used to retrieve events over a specific time period.
+4. `How to search` panel
+5. `Whar to search` panel gives a summary of the data that is indexed on this server. `Data Summary` button, get a break down of the data indexed by host, source, and sourcetypes.
+   - `sourcetype`being a classification of data.
+   - `source` is the file or directory path, network port, or script from which the event originated.
+   - `host` is the host name, IP address, or fully qualified domain name of the machine from which the event originated.
+6. `Search History` menu allows to view and return past searches.
 #### 5.1.2 Using Search
 
 #### 5.1.3 Events
